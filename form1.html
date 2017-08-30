@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Information</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+    function enable() {
+    document.getElementById("city").disabled=false;
+}
+  </script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Student Information</h2>
+  <form class="form-horizontal" autocomplete="OFF">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="studentName">Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="studentName" placeholder="Enter name" name="studentName" autofocus required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Father's Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="fName" placeholder="Enter name" name="fName">
+      </div>
+    </div>
+
+     <div class="form-group">
+      <label class="control-label col-sm-2" >Mother's Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="mName" placeholder="Enter name" name="mName">
+      </div>
+    </div>
+
+     <div class="form-group">
+      <label class="control-label col-sm-2" >Guardian Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="gName" placeholder="Enter name" name="gName">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" >Class 10<sup>th</sup>(%)</label>
+      <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="100%" name="10th%" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" >Class 12<sup>th</sup>(%)</label>
+      <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="100%" name="12th%" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Branch Opted</label>
+      <div class="col-sm-2">
+    <select name="branchOpted" class="form-control" required>
+        <option selected>-    -</option>
+        <option >WTA</option>
+        <option >SC</option>
+        <option >TSA</option>
+        <option >PC</option>
+    </select>
+    </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" >Gender</label>
+      <div class="col-sm-4">
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Male</label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">Female</label>
+      </div>
+      </div>
+
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" >Mobile No. :</label>
+      <div class="col-sm-3">
+        <input type="text" class="form-control" id="mobileNo" placeholder="12345-67890" name="mobileNo" size="10">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Address:</label>
+      <div class="col-sm-10">
+    <textarea class="form-control" rows="3"></textarea>
+    </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">State:</label>
+      <div class="col-sm-2">
+    <select name="branchOpted" class="form-control" id="state" required onclick="enable()">
+        <option >-   -</option>
+        <option >GJ</option>
+        <option >KA</option>
+        <option >MH</option>
+        <option >RJ</option>
+    </select>
+    </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">City/District:</label>
+      <div class="col-sm-2">
+    <select name="branchOpted" class="form-control"  required disabled id="city">
+        
+        <option >Surat</option>
+        <option >Bangalore</option>
+        <option >Mumbai</option>
+        <option >Jaipur</option>
+    </select>
+    </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Reason for opting our college:</label>
+      <div class="col-sm-10">
+    <textarea class="form-control" rows="3"></textarea>
+    </div>
+    </div>
+    
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="reset" class="btn btn-default">Reset</button>
+      </div>
+    </div>
+
+  </form>
+</div>
+
+</body>
+</html>
