@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+	<title>Details</title>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+    		$('a').click(function()
+    		{
+       			$('#myTable tbody').append('<tr class="child"><td>blahblah</td></tr>');
+    		});
+		});
+</script>
+</head>
+<body>
+	<table border="1mm solid black" id="myTable">
+		<tr>
+			<th>Name</th>
+			<th>Phone no.</th>
+			<th>Fetch</th>
+			<th>Add/Remove</th>
+		</tr>
+		<tr>
+			<td><input type="text" id="nm" /></td>
+			<td><input type="text" id="pn" /></td>
+			<td><button id="bt" onclick="displayname(this.parentNode)">Fetch</button></td>
+			<td><button onclick="addrow(this.parentNode)">+</button><button onclick="delrow(this.parentNode)">-</button></td>
+		</tr>
+	</table>
+</body>
+</html>
